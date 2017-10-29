@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Medichain Rx - Home</title>
+    <link href="img/MedichainRXFavicon.png" rel="shortcut icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="js/javascript.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+
+    <div class="topNav" id='fixedNavTop'>
+      <a href="index.html" id='topNavLeftMost'>Home</a>
+      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#loginModal">Login </button>
+    </div>
+
+
+    <!-- Modal -->
+    <div id="loginModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">MediChain Login Services</h4>
+          </div>
+          <div class="modal-body">
+            <form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Log In</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="username">Username</label>
+  <div class="col-md-4">
+  <input id="username" name="username" type="text" placeholder="username" class="form-control input-md" required="">
+
+  </div>
+</div>
+
+<!-- Password input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="password">Password</label>
+  <div class="col-md-4">
+    <input id="password" name="password" type="password" placeholder="password" class="form-control input-md" required="">
+
+  </div>
+</div>
+
+<!-- Button (Double) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="submit"></label>
+  <div class="col-md-8">
+    <button id="submit" name="submit" class="btn btn-success">Login</button>
+    <button id="cancel" name="cancel" class="btn btn-danger">Cancel</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content ">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">MediChain Account Services</h4>
+          </div>
+          <div class="modal-body">
+            <form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Registration</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="nameFirst">First Name</label>
+  <div class="col-md-4">
+  <input id="nameFirst" name="nameFirst" type="text" placeholder="first name" class="form-control input-md">
+
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="nameLast">Last Name</label>
+  <div class="col-md-4">
+  <input id="nameLast" name="nameLast" type="text" placeholder="last name" class="form-control input-md">
+
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="emailAddress">Email Address</label>
+  <div class="col-md-4">
+  <input id="emailAddress" name="emailAddress" type="text" placeholder="email" class="form-control input-md" required="">
+
+  </div>
+</div>
+
+<!-- Password input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="passwordT">Desired Password</label>
+  <div class="col-md-4">
+    <input id="passwordT" name="passwordT" type="password" placeholder="enter a password" class="form-control input-md" required="">
+
+  </div>
+</div>
+
+<!-- Password input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="passwordV">Verify Password</label>
+  <div class="col-md-4">
+    <input id="passwordV" name="passwordV" type="password" placeholder="re-enter password" class="form-control input-md" required="">
+
+  </div>
+</div>
+
+<!-- Button (Double) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="submit"></label>
+  <div class="col-md-8">
+    <button id="submit" name="submit" class="btn btn-success">Confirm and Submit</button>
+    <button id="cancel" name="cancel" class="btn btn-danger">Cancel</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="pimg1">
+        <div class="pimage">
+          <img id="logoImgLanding" src="img/MediChainSprite.png" alt="Medichain Rx">
+
+          <div class="landningButtons">
+            <div class="signUpButton">
+              <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Register Patient</button>
+
+
+            </div>
+            <div class="signUpButton">
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Register Clinic</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <section class="section section-light">
+      <h2>Welcome To The Future Of Medical Records</h2>
+      <div class="container">
+        <div class="content">
+          <p>
+            MediChain Rx is the first blockchain solution that addresses the need for an update in the way we keep track of medical records in the fast paced world of today. MediChain Rx is safe, secure, transferrable, and fast.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section section-light">
+
+      <div class="container">
+        <div class="content">
+
+          <div class="contentHalf" >
+            <h2>Secure Encryption For All Your Medical Records</h2>
+            <p>MediChain Rx utilizes state-of-the-art encryption to ensure every piece of data is secure. With this guarantee, users are able to be at peace of mind knowing their personal health data is free from malicious hackers.  </p>
+          </div>
+          <div class="rightImage">
+            <div>
+            <img id="padlockImg" src="img/icon_1024_5_12.png" alt="Secure Lock">
+          </div>
+        </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="container">
+        <div class="content">
+          <div id="blockchainIs" class="contentHalf">
+            <span class="bigBoldDisplay"><p>Blockchain is</p></span>
+            <b>
+              <span1>
+                powerful.<br />
+                freeing.<br />
+                glorious.<br />
+                connecting.<br />
+                the solution.
+                </span1>
+            </b>
+          </div>
+
+
+
+          <div class="centerImage">
+            <img id="blockchainImg" src="img/blockchain.png" alt="power of the blockchain">
+          </div>
+          <div class="contentHalf">
+            <h2>Utilize the Power of the blockchain</h2>
+            <p>Using blockchain technology, records can be accessed by secured users and transfered faster than ever, saving you money and valuable time.</p>
+          </div>
+          <div class="contentHalf rightHalf">
+            <h2>Take Back Your Information</h2>
+            <p>With the blockchain network, you own your records, Medichain Rx takes no ownership over your data by its decentralized nature.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="section section-dark">
+      <div class="container">
+        <div class="content">
+          <h2>Always Accessible</h2>
+          <div class="content">
+            <p>Currently, medical records take too long to gain access to, as some services will require up to 30 days to deliver your medical records to you. With a digital patient ledger, your data is free to access and takes only seconds to obtain. Medichain Rx provides the much needed solution to bring medial records up to date with the world today.</p>
+          </div>
+          <br>
+        </div>
+      </div>
+    </section>
+    <section class="section section-light">
+      <div class=" container">
+        <div class="content">
+          <h2>Speed Matters.</h2>
+
+        </div>
+
+      </div>
+      <div class="container">
+        <div class="content">
+          <div class="contentHalf centerImage">
+
+            <br>
+            <span class="medBoldDisplay">30 Days</span>
+            <p>The amount of time customers are told it may take to obtain your medical records by standard practice in 2017.</p>
+          </div>
+          <div class="contentHalf rightHalf centerImage">
+
+            <br>
+            <span class="medBoldDisplay"> &lt 30 Seconds</span>
+            <p>The amount of time it will take on average to get all your medical records with Medichain Rx: thats the blockchain difference.</p>
+          </div>
+          <br>
+          <br>
+          <div class="content">
+            Blockchain is leading the way into the new era of technological advancements, and that includes the world of health records. Queries that would have previously taken up to nearly a month to complete by human effort are now accomplishable at lightning fast speeds and allowing business to be conducted with less error and delay.
+          </div>
+          <br>
+          <br>
+        </div>
+      </div>
+    </section>
+    <section class="section section-dark">
+      <div class="container">
+        <div class="content centerImage">
+
+          <h2>An Open Source Platform To Fuel The Future</h2>
+        </div>
+      </div>
+      <div class="container">
+        <div class="content">
+
+          <div class="contentHalf justify">
+            <br>
+            <p>Our open source interface allows for users to continue to extend the capabilities and strengths of our platform. This opens up the horizons for limitless expansion from the community in a global effort to perfect and expand upon the system. Additionally, doctors will be able to use our tools to query necessary information from your place in the blockchain, given your permission, allowing you to see your medical record every step of the way, and also saving you and the office enough time to go get ice cream.</p>
+          </div>
+          <div class="rightImage">
+            <div>
+              <br>
+              <img id="padlockImg" src="img/OpenSourceIcon.png" alt="Open Source img">
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section class="section section-light">
+      <div class="container">
+        <div class="content">
+          <h2>Pioneering The Future</h2>
+          <div class="container">
+            Together, MediChain Rx can become the go to source for safely storing medical records. Between safety, ease of access, and peace of mind, MediChain Rx has a promising future going down the road ahead.
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="section section-light centerImage">
+      <span class="footerTxt">Copyright 2017 MediChain Rx</span>
+    </section>
+  </body>
+</html>
